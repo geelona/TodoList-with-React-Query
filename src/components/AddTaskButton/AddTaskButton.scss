@@ -1,0 +1,38 @@
+.add-task-button {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00ae1c;
+    gap: 0.5vw;
+    outline: none;
+    border: none;
+    padding: 0.5vw 1vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: background 0.1s, scale 0.1s;
+
+    &:hover {
+        background: #00c41a;
+    }
+
+    &:active {
+        scale: 0.95;
+    }
+
+    & > img {
+        position: relative;
+        width: 0.85vw;
+        height: 0.85vw;
+        top: -0.05vw;
+    }
+
+    & > p {
+        font-size: 1vw;
+        color: white;
+        margin: 0;
+    }
+}

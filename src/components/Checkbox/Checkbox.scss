@@ -1,0 +1,35 @@
+.checkbox-container {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > input {
+        appearance: none;
+        width: 0.9vw;
+        height: 0.9vw;
+        background: white;
+        border: 0.15vw solid #323749;
+        border-radius: 0.15vw;
+        cursor: pointer;
+        transition: background 0.1s, border 0.1s;
+
+        &:checked {
+            background: #00ae1c;
+            border: 0.15vw solid #00ae1c;
+        }
+    }
+
+    & > input:checked + img {
+        display: block;
+    }
+
+    & > img {
+        position: absolute;
+        width: 0.7vw;
+        height: 0.7vw;
+        pointer-events: none;
+        display: none;
+        filter: invert(1);
+    }
+}

@@ -1,0 +1,25 @@
+.remove-todo-button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    & > img {
+        width: 0.8vw;
+        height: 0.8vw;
+        pointer-events: none;
+        transition: filter 0.1s;
+    }
+
+    &:hover {
+        & > img {
+            filter: invert(0.4);
+        }
+    }
+
+    &:active {
+        & > img {
+            filter: invert(0.8);
+        }
+    }
+}
